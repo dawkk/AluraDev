@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header class="navbar__header">
+
+            <img class="navbar__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev">
+            <input class="navbar__search" type="text" placeholder="Busque por algo">
+            <button class="navbar__author">
+                <img class="navbar__authorPhoto" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                <p class="navbar__authorName">Harry</p>
+            </button>
+    </header>
+
+    <main>
+        <div class="menu__all">
+        
+            <div class="menu__left">
+                <h1 class="menu__title">Menu</h1>
+                <ul class="menu__leftList">
+                    <li><a href="#"><img class="menu__leftIcon" src="imagens/Icone_Editor.png">Editor de Código</a></li>
+                    <li><a href="#"></a><img class="menu__leftIcon" src="imagens/Icone_Comunidade.png">Comunidade</a></li>
+                </ul>
+            </div>
+
+            
+            <!--menu main-->
+            <div>
+                <div class="menu__mainColorFrame">  
+                    <div class="menu__mainBackground">  
+                        <img class="menu__mainIcon" src="imagens/bola_vermelha.svg">    
+                        <img class="menu__mainIcon" src="imagens/bola_verde.svg">   
+                        <img class="menu__mainIcon" src="imagens/bola_amarela.svg"> 
+                        <div>   
+                            <textarea class="menu__mainText" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
+                                
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
+                                
+                            const unfold = (f, seed) => {   
+                            const go = (f, seed, acc) => {    
+                                const res = f(seed) 
+                                return res ? go(f, res[1], acc.concat([res[0]])) : acc  
+                            } 
+                            return go(f, seed, [])    
+                            }"></textarea>  
+                        </div>  
+                    </div> 
+                </div>  
+
+                <button type="button" class="menu__mainButton">Visualizar com o Highlight</button>
+            </div> 
+
+
+            <div class="menu__right">
+                <h1 class="menu__title">Seu projeto</h1>
+                <input class="menu__rightProject" type="text" name="projectName" placeholder="Nome do seu projeto">
+
+               <!--  <input class="menu__rightDescription" type="text" name="projectDescription" placeholder="Descrição do seu projeto"> -->
+
+                <textarea class="menu__rightDescription" rows="4" placeholder="Descrição do seu projeto"></textarea>
+               
+                <div class="menu__rightBottom">
+                    <h1 class="menu__title">Personalização</h1>
+                   
+                    <form action="#">
+                        <label for="languages">
+                        <select class="menu__rightCustomize" name="languages" id="languages">
+                        <option value="javascript" id="languages">Javascript</option>
+                        <option value="html" id="languages">HTML</option>
+                        <option value="css" id="languages">CSS</option>
+                        </select>
+                        </label>
+
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+         
+                
+
+        </div> 
+                
+
+
+
+
+<!--             
+    
+    <i class="fas fa-code menu__icon">
+        <i class="fas fa-users menu__icon"></i>
+    
+    <ul class="menu__aside">
+                <li>Menu</li>
+                <li><a class="menu__link" href=""><i class="fas fa-code menu__icon"></i><p class="menu__text">Editor de Código</p></a></li>
+                <li><a class="menu__link" href="#"><i class="fas fa-users menu__icon"></i><p class="menu__text">Comunidade</p></a></li>
+                
+            </ul>
+
+ -->
+      
+               <!--  <li>M E N U</li>
+                <li><a href="#"><img class ="menu__iconEditor" src="imagens/Icone_Editor.png" alt="icone editor de código">Editor de Código</a></li>
+                <li><a href="#"><img class ="menu__iconCommunity"src="imagens/Icone_Comunidade.png" alt="icone de comunidade">Comunidade</a></li>
+                -->   
+
+           
+            
+    </main>
+        
+
+    <footer>
+    </footer>
+</body>
+</html>
