@@ -1,26 +1,27 @@
 
 
 :root {
-    --background: #051D3B;
-    --background-forms:rgba(255, 255, 255, 0.16);
+    --backgroundcolor-allpage: #051D3B;
+    --backgroundcolor-interactive:rgba(255, 255, 255, 0.16);
     
+    --background-forms:rgba(255, 255, 255, 0.16);
 }
 
 * {
-    color: white;
     list-style: none;
     text-decoration: none;
-   
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 25rem;
+    line-height: 1.5rem;
+    color: #ffffff;
 }
 
 body{
-    background-color: var(--background);
+    background-color: var(--backgroundcolor-allpage);
+    font-size: 16px;
 }
 
-main {
-    padding: 0 2rem;
-    
-}
 
 .menu__title {
     padding: 0 0 1rem 0;
@@ -33,10 +34,10 @@ main {
 
 .navbar__header {
     display: grid;
-    grid-template-columns: 1fr 2.1fr 0.9fr;
+    grid-template-columns: 0.8fr 2.3fr 0.9fr;
     align-items: center;
-    margin:1rem 0 2.5rem 0;
-    gap: 2.5rem;
+    margin:1.8rem 0 2.5rem 0;
+    /* gap: 2.5rem; */
 }
 
 .navbar__logo {
@@ -46,16 +47,15 @@ main {
 
 .navbar__search {
     color: gray;
-    width: 100%;
+    width: 95%;
     border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.16);
+    background: var(--backgroundcolor-interactive);
     color: #FFFFFF;
     border: none;
     outline: none;
     padding: 1.3rem 1rem;
     margin: 1rem;
     box-sizing: border-box;
-    margin: 0.5rem 0;
     font-size: 1rem;
  
 }
@@ -65,7 +65,7 @@ main {
     display: flex;
     align-items: center;
     padding: 0.5rem;
-    margin: 0 2rem 0 0;
+    margin: 0 4rem 0 0;
     background-color: var(--background);
     border-radius: 0.5rem;
     border:none;
@@ -87,10 +87,11 @@ main {
 
 .menu__all {
     display:flex;
+    padding: 0 2rem;
 
 }
 .menu__left {
-    width: 25%;
+    width: 17.5%;
 }
 
 .menu__leftIcon {
@@ -111,11 +112,11 @@ main {
 
 
 .menu__mainColorFrame {
-    width: 60.62rem;
+    width: 66rem;
     height: 24rem;
     background-color:#6BD1FF;
     border-radius: 0.5rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
     margin-left: 4rem;
     box-sizing: border-box;
     padding: 1.7rem;
@@ -138,7 +139,7 @@ main {
 }
 
 .menu__mainText {
-    width: 55rem;
+    width: 60rem;
     height: 15rem;
     background-color: black;
     border: none;
@@ -151,7 +152,7 @@ main {
     color: white;
     background-color: #5081FB14;
     margin-top: 2rem;
-    width: 60.62rem;
+    width: 66rem;
     height: 3rem;
     border-radius: 0.5rem;
     border: none;
@@ -187,7 +188,6 @@ main {
 }
 
 
-
 .menu__rightBottom {
     padding:2rem 0 0 0;
 }
@@ -198,46 +198,40 @@ main {
     width: 100%;
     height: 4rem;
     border: none;
-    font-size: 1rem;
+    padding: 0 0 0 1rem;
+    margin: 0 0 1rem 0;
+
 }
 
+.menu_rightCustomize_select {
+    background-color: var(--backgroundcolor-allpage);
+}
 
+.menu__rightBorderColor {
+    border: 1px solid white;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}
 
-/*  WASNT WORKING
+.menu__rightColor {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    padding:0;
+}   
 
-desenho da borda envolta da comunidade
-.menu__icon {
+.menu__rightButton {
+    margin: 1rem 0 0 0;
+}
+
+.menu__rightButtonSave {
+    width: 100%;
+    height: 4rem;
     background-color:#5081FB;
-    border-radius: 1rem;
-    padding: 1rem 1rem;
-
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
 }
 
-.menu__aside {
-    width: 280px;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-   
-}
-
-
-
-.menu__iconBorder {
-    width: 160px;
-    height: 48px;
-}
-
-
-
-
-.menu__icon {
-    background-color:#5081FB;
-    border-radius: 16px;
-    padding: 15px 14px;
-    
-}
-
- */
+/* ------------- RESPONSIVIDADE --------------------- */
 

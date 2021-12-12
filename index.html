@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
+
 </head>
 <body>
     <header class="navbar__header">
@@ -59,64 +60,34 @@
                 <button type="button" class="menu__mainButton">Visualizar com o Highlight</button>
             </div> 
 
-
             <div class="menu__right">
                 <h1 class="menu__title">Seu projeto</h1>
                 <input class="menu__rightProject" type="text" name="projectName" placeholder="Nome do seu projeto">
 
-               <!--  <input class="menu__rightDescription" type="text" name="projectDescription" placeholder="Descrição do seu projeto"> -->
 
                 <textarea class="menu__rightDescription" rows="4" placeholder="Descrição do seu projeto"></textarea>
                
                 <div class="menu__rightBottom">
                     <h1 class="menu__title">Personalização</h1>
-                   
-                    <form action="#">
-                        <label for="languages">
-                        <select class="menu__rightCustomize" name="languages" id="languages">
-                        <option value="javascript" id="languages">Javascript</option>
-                        <option value="html" id="languages">HTML</option>
-                        <option value="css" id="languages">CSS</option>
-                        </select>
-                        </label>
 
-
-                    </form>
-
-
+                    <select class="menu__rightCustomize" name="languages" id="languages">
+                        <option class="menu_rightCustomize_select" value="javascript" id="languages">Javascript</option>
+                        <option class="menu_rightCustomize_select" value="html" id="languages">HTML</option>
+                        <option class="menu_rightCustomize_select" value="css" id="languages">CSS</option>
+                    </select>
+                 
+                    <div class="menu__rightBorderColor">
+                        <input class="menu__rightColor" name="MainColorFrame"  type="color" value="#6BD1FF">
+                    </div>
+                    
+                    <div class="menu__rightButton">
+                        <button class="menu__rightButtonSave" type="button">Salvar Projeto</button>
+                    </div>
                 </div>
-
-
             </div>
-         
-                
-
         </div> 
                 
-
-
-
-
-<!--             
-    
-    <i class="fas fa-code menu__icon">
-        <i class="fas fa-users menu__icon"></i>
-    
-    <ul class="menu__aside">
-                <li>Menu</li>
-                <li><a class="menu__link" href=""><i class="fas fa-code menu__icon"></i><p class="menu__text">Editor de Código</p></a></li>
-                <li><a class="menu__link" href="#"><i class="fas fa-users menu__icon"></i><p class="menu__text">Comunidade</p></a></li>
-                
-            </ul>
-
- -->
-      
-               <!--  <li>M E N U</li>
-                <li><a href="#"><img class ="menu__iconEditor" src="imagens/Icone_Editor.png" alt="icone editor de código">Editor de Código</a></li>
-                <li><a href="#"><img class ="menu__iconCommunity"src="imagens/Icone_Comunidade.png" alt="icone de comunidade">Comunidade</a></li>
-                -->   
-
-           
+  
             
     </main>
         
