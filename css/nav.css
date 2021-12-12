@@ -1,0 +1,40 @@
+
+
+.nav__container {
+    width: 15.5%;
+}
+
+.nav__icon {
+    padding: 15px;
+    height: 18px;
+    background-color: #5081FB;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 16px;
+    color: var(--font-color);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 15px 0;
+    
+}
+
+.nav__li {
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color);
+    opacity: 56%;
+}
+
+
+
+
+
+
+
+
+
+
