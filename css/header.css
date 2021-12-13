@@ -44,4 +44,25 @@
 }
 
 
+/* responsividade tablet 768px talvez 900px? */
+
+@media screen and (min-width:768px) and (max-width:900px) {
+
+    .header__container {
+        margin:1rem 0 1.5rem 0.5rem;
+        justify-content: space-between;
+    }
+
+    .header__search {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .header__author {
+        display: none;
+    }
+    
+}
+
+
 
