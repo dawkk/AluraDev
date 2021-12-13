@@ -34,29 +34,30 @@
                 <h1 class="title">Menu</h1>
                 <ul class="nav__list">
                     <li><a class="nav__li" href="#"><i class="fas fa-code nav__icon" alt="icone de editor de código"></i>Editor de Código</a></li>
-                    <li><a class="nav__li" href="#"><i class="fas fa-users nav__icon" alt="icone de comunidade"></i>Comunidade</a></li>
+                    <li><a class="nav__li current__link" href="#"><i class="fas fa-users nav__icon" alt="icone de comunidade"></i>Comunidade</a></li>
                 </ul>
             </div>
             
-            <!-- COMMUNITY-->
+            
+            <!-- COMMUNITY UP LEFT-->
 
             <div class="community__container">
-                <div class="community__frame">  
+                <div class="community__frame__up__left">  
                     <div class="community__background">  
                         <img class=".community__icons" src="imagens/bola_vermelha.svg">    
                         <img class=".community__icons" src="imagens/bola_verde.svg">   
                         <img class=".community__icons" src="imagens/bola_amarela.svg">    
-                            <textarea class="community__text" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
+                            <textarea class="community__text" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                                 
-                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
-                                
-                            const unfold = (f, seed) => {   
-                            const go = (f, seed, acc) => {    
-                                const res = f(seed) 
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc  
-                            } 
-                            return go(f, seed, [])    
-                            }"></textarea>  
+                                const unfold = (f, seed) => {
+                                  const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                  }
+                                  return go(f, seed, [])
+                                }"></textarea>  
                     </div> 
                 </div>  
                 <div class="community__details">
@@ -74,25 +75,25 @@
                             <img class="community__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
                             <p class="community__author__name">@Harry</p>
                         </div>
-
                     </div>
                 </div>
-                    <div class="community__frame">  
+
+                <!-- COMMUNITY DOWN LEFT-->
+
+                    <div class="community__frame__down__left">  
                         <div class="community__background">  
                             <img class=".community__icons" src="imagens/bola_vermelha.svg">    
                             <img class=".community__icons" src="imagens/bola_verde.svg">   
                             <img class=".community__icons" src="imagens/bola_amarela.svg">    
-                                <textarea class="community__text" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
-                                    
-                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
-                                    
-                                const unfold = (f, seed) => {   
-                                const go = (f, seed, acc) => {    
-                                    const res = f(seed) 
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc  
-                                } 
-                                return go(f, seed, [])    
-                                }"></textarea>  
+                                <textarea class="community__text" cols="30" rows="10" placeholder="let textureOldGoldURL = 'https://assets.codepen.io/911157/matcapCop.jpg';
+                                let modelURL = 'https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb';
+                                
+                                // LANDSCAPE / PORTRAIT
+                                
+                                let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                                let windowRatio = window.innerWidth / window.innerHeight;
+                                let isLandscape = (windowRatio > 1) ? true : false;
+                                "></textarea>  
                         </div> 
                     </div>  
                     <div class="community__details">
@@ -112,25 +113,29 @@
                             </div>
                         </div>
             </div> 
-        </div>          
+        </div>  
+        
+        <!-- COMMUNITY UP RIGHT-->
+
         <div class="main__container">    
             <div class="community__container">
-                <div class="community__frame">  
+                <div class="community__frame__up__right">  
                     <div class="community__background">  
                         <img class=".community__icons" src="imagens/bola_vermelha.svg">    
                         <img class=".community__icons" src="imagens/bola_verde.svg">   
                         <img class=".community__icons" src="imagens/bola_amarela.svg">    
-                            <textarea class="community__text" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
-                                
-                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
-                                
-                            const unfold = (f, seed) => {   
-                            const go = (f, seed, acc) => {    
-                                const res = f(seed) 
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc  
-                            } 
-                            return go(f, seed, [])    
-                            }"></textarea>  
+                            <textarea class="community__text" cols="30" rows="10" placeholder="@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+
+                            * {
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                min-height: 100vh;
+                                background-color: #18181c;
+                                display: flex;
+                                align-items: center;
+                            "></textarea>  
                     </div> 
                 </div>  
                 <div class="community__details">
@@ -151,22 +156,27 @@
 
                     </div>
                 </div>
-                    <div class="community__frame">  
+
+                <!-- COMMUNITY DOWN RIGHT-->
+                
+                    <div class="community__frame__down__right">  
                         <div class="community__background">  
                             <img class=".community__icons" src="imagens/bola_vermelha.svg">    
                             <img class=".community__icons" src="imagens/bola_verde.svg">   
                             <img class=".community__icons" src="imagens/bola_amarela.svg">    
-                                <textarea class="community__text" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
+                                <textarea class="community__text" cols="30" rows="10" placeholder="<!-- page heading -->
+                                    <div class='container container-dark p-y-md'>
+                                      <div class='header-content'>
+                                        <h1>Material Search Animation</h1>
+                                        <h2>Usign CSS Transitions</h2>
+                                      </div>
+                                    </div>
                                     
-                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
                                     
-                                const unfold = (f, seed) => {   
-                                const go = (f, seed, acc) => {    
-                                    const res = f(seed) 
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc  
-                                } 
-                                return go(f, seed, [])    
-                                }"></textarea>  
+                                    <!-- page content + floating button -->
+                                    <div class='container p-y-md'>
+                                      <div class='control'>
+                                        <div class='btn-material'></div>"></textarea>  
                         </div> 
                     </div>  
                     <div class="community__details">

@@ -4,6 +4,13 @@
     --bg-gray-light:rgba(255, 255, 255, 0.16);
     --bg-gray-dark:#141414;
 
+    --bg-editor-green:rgba(154, 255, 107, 1);
+    --bg-editor-blue:rgba(107, 131, 255, 1);
+    --bg-editor-orange: rgba(255, 196, 107, 1);
+    --bg-editor-pink:rgba(255, 107, 205, 1);
+
+
+
     --bg-community:rgba(0, 0, 0, 0.16);
 
     --font-color:#ffffff;
