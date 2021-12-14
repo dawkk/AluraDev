@@ -1,0 +1,223 @@
+
+
+
+@media screen and (min-width:768px) and (max-width:900px) {
+
+    /* base.css */
+
+    :root {
+        --font-size-fields:14px
+    }
+
+    .main__container {
+        padding: 0;
+        margin: 2rem;
+        display: block;
+    }
+    
+    body{
+        line-height: 0;
+    }
+
+    /* header.css */
+
+    .header__container {
+        margin:1rem 0 1.5rem 0.5rem;
+        justify-content: space-between;
+    }
+
+    .header__search {
+        width: 100%;
+        margin-left: 1rem;
+        font-size: var(--font-size-fields);
+    }
+
+    .header__author {
+        display: none;
+    }
+
+    /* Gibberish trying to implement hamburguer menu for mobile */
+
+    .mobile__menu {
+        color: var(--font-color);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__toggle{
+        position: absolute;
+        right: 6%;
+        top: 3%;
+        cursor: pointer;
+    }
+
+    .menu__open {
+        width: 1.5rem;
+        color: var(--font-color);
+    }
+    
+    .menu__close{
+        display: none;
+        width: 1.5rem;
+        color: var(--font-color);
+    }
+    .nav__checkbox {
+        display: none;
+    }
+
+    .nav__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .nav__menu a {
+        text-decoration: none;
+        color: var(--font-color);
+        font-size: 1.2rem;
+    }
+
+    .nav__menu li {
+        display: none;
+    }
+
+    .mobile__list {
+        width: 10rem;
+        height: 4rem;
+        background-color: steelblue;
+    }
+
+    #nav__checkbox:checked ~ ul.nav__menu li{
+        display: block;
+
+    }
+
+    #nav__checkbox:checked ~ label.nav__toggle .menu__close{
+        display: block;
+    }
+
+    #nav__checkbox:checked ~ label.nav__toggle .menu__open{
+        display: none;
+    }
+    #nav__checkbox:checked ~ label.nav__toggle .menu__close{
+        display: block;
+    }
+
+    /* nav.css */
+
+    .nav__container{
+        display: none;
+    }
+
+
+    /* middle.css */
+
+    .middle__container {
+        display: inline-flex;
+        flex-flow: column;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .middle__frame {
+        width: 92.8vw;
+        height: 40vw;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        padding: 1.2rem;
+        background-color: var(--bg-blue-light);
+        margin: 0;
+    }
+
+    .middle__background {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        padding: 1rem;
+        background-color: var(--bg-gray-dark);
+        margin: 0;
+        font-size: var(--font-size-fields);
+    }
+
+    .middle__button {
+        width: 92.8vw;
+        height: 7vw;
+        padding: 0;
+        margin: 2rem 0 0 0;
+        background-color: #5081FB14;
+        color: var(--font-color);
+        font-size: 16px;
+        font-size: var(--font-size-fields);
+    }
+
+    /* project.css */
+
+
+    .project__container {
+        display: block;
+        margin:0;
+        margin-top: 2rem;
+    }
+    .project__name { 
+        min-width: none;
+        width: 90.5vw;
+        height: 5vw;
+        font-size: var(--font-size-fields);
+    }
+
+    .project__description {
+        min-width: none;
+        width: 90.5vw;
+        height: 8vw;
+        font-size: var(--font-size-fields);
+    }
+
+    .project__padding {
+        padding:2rem 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .project__select {
+        width: 45vw;
+        height: 6.5vw;
+        padding: 0 1rem 0 1rem;
+        margin: 0 1rem 1rem 0;
+        font-size: var(--font-size-fields);
+    }
+
+    .project__color__box__border {
+        border-radius: 0.8rem;
+        border: 1px solid white;
+        width: 43.9vw;
+        height: 4.5vw;
+        padding: 0.5rem;
+    }
+
+    .project__color__box__fill {
+        width: 100%;
+        height: 100%;
+        border: none;
+
+      
+    }
+
+    .mobile__customize {
+        width: 95vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project__button{
+        width: 92.6vw;
+        margin-top: 1rem;
+        font-size: var(--font-size-fields);
+    }
+
+
+}
+
+

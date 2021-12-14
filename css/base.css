@@ -16,6 +16,9 @@
     --font-color:#ffffff;
     --title-color:#ffffff;
 
+    --font-size-fields:16px;
+    
+
     --font-family:'Inter', sans-serif;
 }
 
@@ -41,9 +44,14 @@ body {
 
 .main__container {
     display:flex;
-    padding-left: 2rem;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
+
+
+
+    
 
 
 

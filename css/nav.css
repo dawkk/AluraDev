@@ -1,35 +1,25 @@
 
 
 .nav__container {
-    width: 15.5%;
+    width: 17.5%;
 }
 
 .nav__icon {
     padding: 15px;
     height: 18px;
     background-color: #5081FB;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
+    margin-bottom: 4%;
+    margin-right: 4%;
     border-radius: 16px;
     color: var(--font-color);
 }
 
-/* .nav__icon__editor {
-    padding: 15px;
-    height: 18px;
-    background-color: #5081FB;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    border-radius: 16px;
-    color: var(--font-color);
-}
- */
 
 .nav__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 0 15px 0;
+    padding: 0 0 2% 0;
     
 }
 
@@ -38,6 +28,7 @@
     list-style: none;
     color: var(--font-color);
     opacity: 30%;
+    font-size: var(--font-size-fields);
 }
 
 .current__link {
@@ -45,6 +36,9 @@
     opacity: 100%;
 }
 
+.nav__toggle {
+    color: var(--bg-blue-dark);
+}
 
 
 

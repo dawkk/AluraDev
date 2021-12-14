@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/middle.css">
     <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/responsive_mobile.css">
+    <link rel="stylesheet" href="css/responsive_tablet.css">
 
 </head>
 <body>
@@ -24,18 +26,34 @@
             <img class="header__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
             <p class="header__author__name">Harry</p>
         </button>
+
+        <div class="mobile__menu">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+                <label for="nav__checkbox" class="nav__toggle">
+                    <i class="fas fa-bars fa-2x menu__open"></i>
+                    <i class="fas fa-times fa-2x menu__close"></i>
+                </label>
+                <ul class="nav__menu">
+                    <li class="mobile__list"><a href="#">Autor</a></li>
+                    <li class="mobile__list"><a href="#">Editor de Código</a></li>
+                    <li class="mobile__list"><a href="#">Comunidade</a></li>
+                </ul>
+        </div>
+
+      
     </header>
 
     <main>
         <div class="main__container">
+
         
             <!-- NAV -->
 
             <div class="nav__container">
                 <h1 class="title">Menu</h1>
                 <ul class="nav__list">
-                    <li><a class="nav__li current__link" href="#"><i class="fas fa-code nav__icon" alt="icone de editor de código"></i>Editor de Código</a></li>
-                    <li><a class="nav__li" href="#"><i class="fas fa-users nav__icon" alt="icone de comunidade"></i>Comunidade</a></li>
+                    <li><a class="nav__li current__link" href="index.html"><i class="fas fa-code nav__icon" alt="icone de editor de código"></i>Editor de Código</a></li>
+                    <li><a class="nav__li" href="comunidade.html"><i class="fas fa-users nav__icon" alt="icone de comunidade"></i>Comunidade</a></li>
                 </ul>
             </div>
 
@@ -74,17 +92,30 @@
                 <div class="project__padding">
                     <h1 class="title">Personalização</h1>
                    
-                    <select class="project__select" name="languages" id="languages">
+                    <!-- 
+                        percebi que a div abaixo estava sendo usada apenas para criar uma borda, tentando fazer uma mudança, caso de errado, basta descomentar este bloco e o abaixo
+                        
+                        <select class="project__select" name="languages" id="languages">
                         <option value="javascript" id="languages" class="project__select__background">Javascript</option>
                         <option value="html" id="languages" class="project__select__background">HTML</option>
                         <option value="css" id="languages" class="project__select__background">CSS</option>
-                    </select>
-                    
-                    <div class="project__color__box__border">
-                        <input class="project__color__box__fill" name="MainColorFrame"  type="color" value="#6BD1FF">
+
+                        <div class="project__color__box__border">
+                        <input class="project__color__box__fill project__color__box__border" name="MainColorFrame"  type="color" value="#6BD1FF">
                     </div>
-                        
-                    <div class="project__padding">
+                    </select> -->
+                    
+                    <div class="mobile__customize">
+                        <select class="project__select" name="languages" id="languages">
+                            <option value="javascript" id="languages" class="project__select__background">Javascript</option>
+                            <option value="html" id="languages" class="project__select__background">HTML</option>
+                            <option value="css" id="languages" class="project__select__background">CSS</option>
+                        </select>
+
+                        <div class="project__color__box__border">
+                            <input class="project__color__box__fill" name="MainColorFrame"  type="color" value="#6BD1FF">
+                        </div>
+                    <div>
                         <button class="project__button" type="button">Salvar Projeto</button>
                     </div>
                 </div>
@@ -93,7 +124,6 @@
     </main>
         
 
-    <footer>
-    </footer>
+
 </body>
 </html>
