@@ -5,7 +5,7 @@
 }
 
 .project__name {
-    width: 20vw;
+    width: 17vw;
     height: 3vw;
     border-radius: 0.5rem;
     border: none;
@@ -14,11 +14,12 @@
     background-color: var(--bg-gray-light);
     color: var(--font-color);
     font-size: var(--font-size-fields);
-    
 }
 
+
+
 .project__description {
-    width: 20vw;
+    width: 17vw;
     height: 5vw;
     border-radius: 0.5rem;
     border: none;
@@ -28,16 +29,17 @@
     background-color: var(--bg-gray-light);
     color: var(--font-color);
     font-size: var(--font-size-fields);
-    
 }
 
+
+
 .project__padding {
-    padding:12.5% 0 0 0;
+    padding:20% 0 0 0;
 }
 
 .project__select {
     border-radius: 0.5rem;
-    width: 21.5vw;
+    width: 18.5vw;
     height: 3vw;
     border: none;
     padding: 0 0 0 1rem;
@@ -66,15 +68,32 @@
 }
 
 .project__button {
-    margin-top: 7%;
-    width: 21.5vw;
-    height: 4vw;
+    margin-top: 11%;
+    width: 18.5vw;
+    height: 3.3vw;
     border: none;
     border-radius: 0.5rem;
-    background-color: #5081FB;
+    background-color:var(--bg-project-button);
     color: black;
-    font-weight: 600;
     font-size: var(--font-size-fields);
 }
 
+
+
+
+
+.project__name:hover, .project__description:hover, .project__select:hover, .project__color__box__border:hover  {
+    background-color: var(--bg-form-hover);
+    transition: 0.5s;
+}
+
+.project__button:hover {
+    background-color: var(--bg-light-button-hover);
+    transition: 0.5s;
+}
+
+.project__button:active {
+    border: 0.5rem solid var(--light-button-border-active);
+    border-radius: 0.5rem;
+}
 

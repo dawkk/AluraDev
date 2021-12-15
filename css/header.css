@@ -4,7 +4,7 @@
     grid-template-columns: 0.92fr 3.1fr 1fr;
     align-items: center;
     margin:1rem 0 2.50rem 1rem;
-    /* gap: 1rem; */
+    gap: 1rem;
 }
 
 .header__logo{
@@ -12,13 +12,13 @@
 }
 
 .header__search {
-    width: 90%;
+    width: 91%;
     border-radius: 5px;
     background-color: var(--bg-gray-light);
     border: none;
     outline: none;
     box-sizing: border-box;
-    padding: 1rem 1rem;
+    padding: 1.6% 1%;
     color: var(--font-color);
     font-size: var(--font-size-fields);
 }
@@ -35,8 +35,7 @@
 }
 
 .header__author__photo {
-    width: 38px;
-    height: 38px;
+    width: 33px;
 }
 
 .header__author__name {
@@ -49,5 +48,11 @@
     display: none;
 }
 
+.header__author:hover {
+    cursor: pointer;
+    background-color: var(--bg-author-hover);
+    transition: 0.5s;
+
+}
 
 

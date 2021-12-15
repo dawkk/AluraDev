@@ -1,4 +1,6 @@
 :root {
+
+    /* background colors */
     --bg-blue-light:#6BD1FF;
     --bg-blue-dark:#051D3B;
     --bg-gray-light:rgba(255, 255, 255, 0.16);
@@ -9,16 +11,40 @@
     --bg-editor-orange: rgba(255, 196, 107, 1);
     --bg-editor-pink:rgba(255, 107, 205, 1);
 
+    --bg-project-button:rgba(80, 129, 251, 1);
+
+    --bg-middle-button:rgba(80, 129, 251, 0.08);
+
+    --bg-nav-icon:rgba(80, 129, 251, 0.16);
+    --bg-nav-icon-active:#5081fb;
 
 
     --bg-community:rgba(0, 0, 0, 0.16);
 
+    /* Effects with interaction */
+
+    --bg-author-hover:rgba(255, 255, 255, 0.10);
+
+    --bg-form-hover:rgba(255, 255, 255, 0.24);
+
+    --bg-light-button-hover:rgba(123, 164, 252, 1);
+    --bg-light-button-active:rgba(150, 185, 253, 1);
+    --light-button-border-active:rgba(80, 129, 251, 0.90);
+
+    --bg-dark-button-hover:rgba(80, 129, 251, 0.16);
+    --bg-dark-button-active:rgba(80, 129, 251, 0.24);
+    --dark-button-border-active:rgba(80, 129, 251, 0.24);
+
+    --bg-nav-hover:rgba(80, 129, 251, 0.64);
+    --bg-nav-active:rgba(80, 129, 251, 1);
+
+   
+
+    /* font details */
+
     --font-color:#ffffff;
     --title-color:#ffffff;
-
     --font-size-fields:16px;
-    
-
     --font-family:'Inter', sans-serif;
 }
 

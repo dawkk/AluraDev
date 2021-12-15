@@ -4,23 +4,27 @@
     width: 17.5%;
 }
 
-.nav__icon {
+
+.nav__list-icon {
     padding: 15px;
     height: 18px;
-    background-color: #5081FB;
+    background-color:var(--bg-nav-icon);
     margin-bottom: 4%;
     margin-right: 4%;
-    border-radius: 16px;
-    color: var(--font-color);
+    border-radius: 1rem;
+    
 }
 
+.nav__list-icon--active {
+    background: var(--bg-nav-icon-active);
+}
 
 .nav__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 0 0 2% 0;
-    
+    color: var(--font-color);
 }
 
 .nav__li {
@@ -31,8 +35,7 @@
     font-size: var(--font-size-fields);
 }
 
-.current__link {
-    color: var(--font-color);
+.nav__li--active {
     opacity: 100%;
 }
 
@@ -41,7 +44,19 @@
 }
 
 
+.nav__li:hover {
+    opacity: 100%;
+}
 
+
+.nav__icon-editor:hover, .nav__icon-community:hover {
+    background-color: var(--bg-nav-hover);
+    transition: 1s;
+}
+
+.nav__icon-editor:active,.nav__icon-community:active {
+    background-color:var(--bg-nav-active);
+}
 
 
 

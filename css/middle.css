@@ -5,7 +5,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-right: 2%;
+    margin-right: 5%;
     margin-left: 2%;
 }
 
@@ -53,7 +53,18 @@
     height: 4rem;
     border-radius: 0.5rem;
     border: none;
-    background-color: #5081FB14;
+    background-color: var(--bg-middle-button);
     color: var(--font-color);
     font-size: var(--font-size-fields);
 }
+
+.middle__button:hover {
+    background-color: var(--bg-dark-button-hover);
+    transition: 0.5s;
+}
+
+.middle__button:active {
+    border: 0.5rem solid var(--dark-button-border-active);
+
+}
+
