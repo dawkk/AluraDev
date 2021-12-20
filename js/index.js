@@ -1,10 +1,10 @@
-(() => {
+
 
 const languages = document.querySelector('[select-languages]');
 const codeArea = document.querySelector('[code-text-area]');
 const highlightButton = document.querySelector('[highlight-button]');
 
-var highlightOnOff = false
+var highlightOnOff = false;
 
 function applyHighlight () {
     const codeEditor = codeArea.innerText;
@@ -22,7 +22,7 @@ const frame = document.querySelector('[frame-color]');
 const colorSelector = document.querySelector('[selector-color]');
 
 
-changeColor()
+changeColor();
 
 colorSelector.addEventListener('input', changeColor); {
     var changeColor = colorSelector.value;
@@ -63,4 +63,3 @@ highlightButton.addEventListener('click', () => {
     
  } */
 
-})
