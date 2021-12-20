@@ -45,6 +45,7 @@
     margin: 1rem 0;
     margin-bottom: 0.5rem;
     font-size: var(--font-size-fields);
+    white-space: pre-wrap;
 }
 
 .middle__button {
@@ -66,5 +67,10 @@
 .middle__button:active {
     border: 0.5rem solid var(--dark-button-border-active);
 
+}
+.middle__wrapper {
+    height: 100%;
+
+    margin-bottom: 32px;
 }
 

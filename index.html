@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/middle.css">
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/responsive_mobile.css">
-    <link rel="stylesheet" href="css/responsive_tablet.css">
+    <link rel="stylesheet" href="./assets/css/monokai.css">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/middle.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
+    <link rel="stylesheet" href="./assets/css/responsive_mobile.css">
+    <link rel="stylesheet" href="./assets/css/responsive_tablet.css">
 
 </head>
 <body>
@@ -49,16 +51,6 @@
         
             <!-- NAV -->
 
-            <!-- 
-                como estava antes das tentativas de mudanças atuais 
-
-                <div class="nav__container">
-                <h1 class="title">Menu</h1>
-                <ul class="nav__list">
-                    <li><a class="nav__li current__link" href="index.html"><i class="fas fa-code nav__icon-editor" alt="icone de editor de código"></i>Editor de Código</a></li>
-                    <li><a class="nav__li" href="comunidade.html"><i class="fas fa-users nav__icon-community" alt="icone de comunidade"></i>Comunidade</a></li>
-                </ul>
-            </div> -->
 
 
             <div class="nav__container">
@@ -72,25 +64,31 @@
             <!-- MIDDLE-->
 
             <div class="middle__container">
-                <div class="middle__frame">  
+                <div class="middle__frame" frame-color>  
+
                     <div class="middle__background">  
                         <img class=".middle__icons" src="imagens/bola_vermelha.svg">    
                         <img class=".middle__icons" src="imagens/bola_verde.svg">   
-                        <img class=".middle__icons" src="imagens/bola_amarela.svg">    
-                            <textarea class="middle__text" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
+                        <img class=".middle__icons" src="imagens/bola_amarela.svg">  
+                        
+                        <div class="middle__wrapper" code-text-area>
+                            <code class="middle__text hljs code" contenteditable="true" aria-label="Editor de código"> const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
                                 
-                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
-                                
-                            const unfold = (f, seed) => {   
-                            const go = (f, seed, acc) => {    
-                                const res = f(seed) 
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc  
-                            } 
-                            return go(f, seed, [])    
-                            }"></textarea>  
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
+                                    
+                                const unfold = (f, seed) => {   
+                                const go = (f, seed, acc) => {    
+                                    const res = f(seed) 
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc  
+                                } 
+                                return go(f, seed, [])    
+                                }
+                            </code>
+                        </div>
                     </div> 
                 </div>  
-                <button type="button" class="middle__button">Visualizar com o Highlight</button>
+                <button type="button" id="Middle__Button-toggle" class="middle__button"  highlight-button>Visualizar com o Highlight</button>
+                        
             </div> 
 
             <!-- PROJECT -->
@@ -103,39 +101,28 @@
                
                 <div class="project__padding">
                     <h1 class="title">Personalização</h1>
-                   
-                    <!-- 
-                        percebi que a div abaixo estava sendo usada apenas para criar uma borda, tentando fazer uma mudança, caso de errado, basta descomentar este bloco e o abaixo
-                        
-                        <select class="project__select" name="languages" id="languages">
-                        <option value="javascript" id="languages" class="project__select__background">Javascript</option>
-                        <option value="html" id="languages" class="project__select__background">HTML</option>
-                        <option value="css" id="languages" class="project__select__background">CSS</option>
-
-                        <div class="project__color__box__border">
-                        <input class="project__color__box__fill project__color__box__border" name="MainColorFrame"  type="color" value="#6BD1FF">
-                    </div>
-                    </select> -->
                     
                     <div class="mobile__customize">
-                        <select class="project__select" name="languages" id="languages">
-                            <option value="javascript" id="languages" class="project__select__background">Javascript</option>
-                            <option value="html" id="languages" class="project__select__background">HTML</option>
-                            <option value="css" id="languages" class="project__select__background">CSS</option>
+                        <select class="project__select languages" name="languages" id="languages" select-languages>
+                            <option value="javascript" class="project__select__background">Javascript</option>
+                            <option value="html" class="project__select__background">HTML</option>
+                            <option value="css" class="project__select__background">CSS</option>
                         </select>
 
                         <div class="project__color__box__border">
-                            <input class="project__color__box__fill" name="MainColorFrame"  type="color" value="#6BD1FF">
+                            <input class="project__color__box__fill" name="MainColorFrame"  type="color" value="#6BD1FF" selector-color>
                         </div>
                     <div>
                         <button class="project__button" type="button">Salvar Projeto</button>
+                        
                     </div>
                 </div>
             </div>
         </div> 
     </main>
         
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
