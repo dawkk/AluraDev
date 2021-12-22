@@ -7,7 +7,7 @@
     --bg-gray-dark:#141414;
 
     --bg-editor-green:rgba(154, 255, 107, 1);
-    --bg-editor-blue:rgba(107, 131, 255, 1);
+    --bg-editor-blue:rgb(12, 14, 27);
     --bg-editor-orange: rgba(255, 196, 107, 1);
     --bg-editor-pink:rgba(255, 107, 205, 1);
 
@@ -17,6 +17,8 @@
 
     --bg-nav-icon:rgba(80, 129, 251, 0.16);
     --bg-nav-icon-active:#5081fb;
+
+    --bg-mobile:#232e3d;
 
 
     --bg-community:rgba(0, 0, 0, 0.16);
@@ -54,17 +56,18 @@ body {
     
     font-family:var(--font-family);
     font-size: 16px;
-    font-style: normal;
     line-height: 1.5rem;
+    font-style: normal;
     background-color: var(--bg-blue-dark)
 }
 
 .title {
     padding: 0 0 1rem 0;
-    font-size: 0.80rem;
+    font-size: 0.75rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     color: var(--title-color);
+    line-height: 1.125rem;
 }
 
 

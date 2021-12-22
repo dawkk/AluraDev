@@ -22,30 +22,25 @@
 <body>
 
     <header class="header__container">
-        <img class="header__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev">
-        <input class="header__search" type="text" placeholder="Busque por algo">
+        <img class="header__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev" header-logo>
+        <input class="header__search" type="text" placeholder="Busque por algo" search-bar>
         <button class="header__author">
             <img class="header__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
             <p class="header__author__name">Harry</p>
         </button>
 
-        <div class="mobile__menu">
-            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
-                <label for="nav__checkbox" class="nav__toggle">
-                    <i class="fas fa-bars fa-2x menu__open"></i>
-                    <i class="fas fa-times fa-2x menu__close"></i>
-                </label>
-                <ul class="nav__menu">
-                    <li class="mobile__list"><a href="#">Autor</a></li>
-                    <li class="mobile__list"><a href="#">Editor de Código</a></li>
-                    <li class="mobile__list"><a href="#">Comunidade</a></li>
-                </ul>
-        </div>
+        <!-- MOBILE NAV OPEN -->
 
-      
+        <div class="nav__mobile__searchSpace"><i class="fas fa-search fa-2x nav__mobile-search" btn-mobile-search></i></div>
+        <div class="nav__mobile__header" >
+            <i class="fas fa-bars fa-2x nav__mobile-openIcon" btn-mobile-open></i>
+        </div> 
+        
+
     </header>
 
     <main>
+        
         <div class="main__container">
 
         
@@ -72,8 +67,8 @@
                         <img class=".middle__icons" src="imagens/bola_amarela.svg">  
                         
                         <div class="middle__wrapper" code-text-area>
-                            <code class="middle__text hljs code" contenteditable="true" aria-label="Editor de código"> const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
-                                
+                            <code class="middle__text hljs code" contenteditable="true" aria-label="Editor de código"> const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)                                                                                                 
+                                a
                                 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
                                     
                                 const unfold = (f, seed) => {   
@@ -83,6 +78,7 @@
                                 } 
                                 return go(f, seed, [])    
                                 }
+                            
                             </code>
                         </div>
                     </div> 
@@ -118,11 +114,38 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <!-- MENU MOBILE -->
+
+    <nav class="nav__mobile__menu" mobile-menu>
+
+        <ul class="nav__mobile__ul">
+            <i class="fas fa-times fa-2x nav__mobile-closeIcon" btn-mobile-close></i>
+            <img class="mobile__logo" src="imagens/Header/Logo.svg" alt="Logotipo AluraDev">
+           
+            
+            <hr>
+            <button class="mobile__author">
+                <img class="mobile__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                <p class="mobile__author__name">Harry</p>
+            </button>
+            <hr>
+            
+
+            <li class="nav__mobile-liPadding"><a class="nav__li nav__li--active" href="index.html"><i class="fas fa-code nav__list-icon nav__list-icon--active" alt="Acessar pagina do editor de código"></i>Editor de Código</a></li>
+         
+            <li class="nav__mobile-liPadding"><a class="nav__li" href="comunidade.html"><i class="fas fa-users nav__list-icon" alt="Acessar pagina da comunidade"></i>Comunidade</a></li>
+            
+        </ul>
+      </nav>
     </main>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/colorFrame.js"></script>
+    <script src="./js/highlight.js"></script>
+    <script src="./js/mobileMenu.js"></script>
 
 </body>
 </html>

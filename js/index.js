@@ -1,65 +1,33 @@
 
 
-const languages = document.querySelector('[select-languages]');
-const codeArea = document.querySelector('[code-text-area]');
-const highlightButton = document.querySelector('[highlight-button]');
-
-var highlightOnOff = false;
-
-function applyHighlight () {
-    const codeEditor = codeArea.innerText;
-    codeArea.innerHTML = `<code class="middle__text hljs ${languages.value}" contenteditable="true" aria-label="Editor de código"></code>`;
-    codeArea.querySelector('code').textContent = codeEditor;
-    hljs.highlightElement(codeArea.querySelector('code'));
-}
-
-highlightButton.addEventListener('click', () => {
-    applyHighlight();
-})
-
-
-const frame = document.querySelector('[frame-color]');
-const colorSelector = document.querySelector('[selector-color]');
-
-
-changeColor();
-
-colorSelector.addEventListener('input', changeColor); {
-    var changeColor = colorSelector.value;
-}
-
-function changeColor() {
-    frame.style.background = colorSelector.value;  
-}
 
 
 
 
-/* 
 
-tentando criar uma forma de desligar o highlight após ligado
 
-highlightButton.addEventListener('click', () => {
-    if(highlightOnOff) {
-        highlightOff();
+
+
+
+
+
+
+/* btnMobileOpen.setAttribute('onclick',navMobileMovement())
+
+function navMobileMovement() {
+    if (navMobile.value == 'active') {
+        btnMobileOpen.style.display = 'initial'
+        btnMobileClose.style.display = 'none'
+        navMobile.style.transform = 'translateX(256px)'
     } else {
-        highlightOn();
+        btnMobileOpen.style.display = 'none'
+        btnMobileClose.style.display = 'initial'
+        navMobile.style.transform = 'translateX(0px)'
     }
- })
+}
 
- function highlightOn() {
+function toggleMenu() {
+    navMobile.classList.toggle('active');
+}
 
-    highlightButton.innerText = 'Remover o Highlight';
-    highlightOnOff = true;
-    applyHighlight ()
- }
-
- function highlightOff() {
-
-
-    codeArea.innerHTML = `<code class="middle__text hljs ${languages.value}" contenteditable="true" aria-label="Editor de código"></code>`;
-    highlightButton.innerText = 'Visualizar com o Highlight';
-    highlightOnOff = false;
-    
- } */
-
+ */

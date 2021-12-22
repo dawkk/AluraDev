@@ -55,4 +55,11 @@
 
 }
 
+.header__search:hover{
+    background-color: var(--bg-form-hover);
+    transition: 0.5s;
+}
+
+
+
 

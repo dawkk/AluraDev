@@ -1,7 +1,7 @@
 
 
 
-@media screen and (min-width:768px) and (max-width:900px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
 
     /* base.css */
 
@@ -15,100 +15,159 @@
         display: block;
     }
     
-    body{
-        line-height: 0;
-    }
 
     /* header.css */
 
     .header__container {
         margin:1rem 0 1.5rem 0.5rem;
         justify-content: space-between;
+        grid-template-columns: [logo] 0.92fr [search] 3.1fr [menu-icon] 1fr;
+
     }
 
     .header__search {
         width: 100%;
+        height: 3.5rem;
         margin-left: 1rem;
         font-size: var(--font-size-fields);
+        grid-column-start:search;
+        grid-column-end:menu-icon;
     }
 
     .header__author {
         display: none;
     }
 
-    /* Gibberish trying to implement hamburguer menu for mobile */
+    .header__logo{
+        width: 180px;
+        grid-column-start:logo;
+        grid-column-end:search;
+    }
 
-    .mobile__menu {
+    .nav__mobile__header{
+        width: 48px;
+        grid-column-start:menu-icon;
+        margin-left: 40%;
+    }
+
+   /* Menu Mobile - Icons - open/close */
+
+    .nav__mobile-openIcon {
         color: var(--font-color);
         display: flex;
-        flex-direction: column;
-    }
-
-    .nav__toggle{
-        position: absolute;
-        right: 6%;
-        top: 3%;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border-radius: 0.8rem;
     }
 
-    .menu__open {
-        width: 1.5rem;
+    .nav__mobile-openIcon:hover{
+        background-color: var(--bg-form-hover);
+        transition: 0.5s;
+    }
+
+
+    .nav__mobile-closeIcon{
         color: var(--font-color);
+        margin:10px;
+        cursor: pointer;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border-radius: 0.8rem;
+    }
+
+    .nav__mobile-closeIcon:hover{
+        background-color: var(--bg-form-hover);
+        transition: 0.5s;
+    }
+
+    
+
+    /* Menu Mobile */
+
+    
+
+    .nav__mobile__menu {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 250px;
+        height: 100vw;
+        border-radius: 8px;
+        background-color:var(--bg-mobile);
+        display: none;
+    }
+
+    .nav__mobile__ul {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+    .nav__li {
+        font-size: 1rem;
+    }
+      
+    .nav__mobile-liPadding {
+        padding: 0.8rem 1.5rem;
     }
     
-    .menu__close{
-        display: none;
-        width: 1.5rem;
-        color: var(--font-color);
+    .mobile__logo {
+        width: 180px;
+        padding: 0 1.5rem;
     }
-    .nav__checkbox {
-        display: none;
+   
+    
+    /* Menu Mobile - Author */
+
+    .mobile__author {
+    background-color:var(--bg-mobile);
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    margin-left:30px;
+    border-radius: 0.8rem;
     }
 
+    .mobile__author:hover {
+    cursor: pointer;
+    background-color: var(--bg-author-hover);
+    transition: 0.5s;
+    }
+
+    .mobile__author__photo {
+    width: 45px;
+    padding-right: 20px;
+    color: var(--font-color);
+    }
+
+    .mobile__author__name{
+    padding: 0 0 0 10px;
+    color: var(--font-color);
+    font-size: 1.2rem;
+    }
+
+    hr {
+        border:0.1px solid rgb(219, 219, 219);
+        width: 90%;
+    }
+    
     .nav__menu {
         display: flex;
         flex-direction: column;
         gap: 3rem;
     }
 
-    .nav__menu a {
-        text-decoration: none;
-        color: var(--font-color);
-        font-size: 1.2rem;
-    }
-
-    .nav__menu li {
-        display: none;
-    }
-
-    .mobile__list {
-        width: 10rem;
-        height: 4rem;
-        background-color: steelblue;
-    }
-
-    #nav__checkbox:checked ~ ul.nav__menu li{
-        display: block;
-
-    }
-
-    #nav__checkbox:checked ~ label.nav__toggle .menu__close{
-        display: block;
-    }
-
-    #nav__checkbox:checked ~ label.nav__toggle .menu__open{
-        display: none;
-    }
-    #nav__checkbox:checked ~ label.nav__toggle .menu__close{
-        display: block;
-    }
 
     /* nav.css */
 
     .nav__container{
         display: none;
     }
-
 
     /* middle.css */
 
@@ -120,11 +179,11 @@
     }
 
     .middle__frame {
+        min-width: 343px;
         width: 92.8vw;
-        height: 40vw;
         border-radius: 0.5rem;
         box-sizing: border-box;
-        padding: 1.2rem;
+        padding: 32px;
         background-color: var(--bg-blue-light);
         margin: 0;
     }
@@ -142,13 +201,30 @@
 
     .middle__button {
         width: 92.8vw;
-        height: 7vw;
+        height: 5vw;
+        min-height: 55.6px;
         padding: 0;
         margin: 2rem 0 0 0;
         background-color: #5081FB14;
         color: var(--font-color);
         font-size: 16px;
         font-size: var(--font-size-fields);
+    }
+
+    .middle__text {
+        display: inline-block;
+        max-width: 984px;
+        max-height:90%;
+        min-width: 400px;
+        min-height: 280px;
+        border: none;
+        background-color: var(--bg-gray-dark);
+        color: var(--font-color);
+        margin: 1rem 0;
+        margin-bottom: 0.5rem;
+        font-size: var(--font-size-fields);
+        white-space: pre-wrap;
+        overflow: hidden;
     }
 
     /* project.css */
@@ -162,14 +238,17 @@
     .project__name { 
         min-width: none;
         width: 90.5vw;
-        height: 5vw;
+        height: 3vw;
+        min-height: 45px;
         font-size: var(--font-size-fields);
+        margin: 0 0 1.5% 0;
     }
 
     .project__description {
         min-width: none;
         width: 90.5vw;
-        height: 8vw;
+        height: 5vw;
+        min-height: 60px;
         font-size: var(--font-size-fields);
     }
 
@@ -183,7 +262,8 @@
 
     .project__select {
         width: 45vw;
-        height: 6.5vw;
+        height: 5vw;
+        min-height: 40px;
         padding: 0 1rem 0 1rem;
         margin: 0 1rem 1rem 0;
         font-size: var(--font-size-fields);
@@ -193,7 +273,8 @@
         border-radius: 0.8rem;
         border: 1px solid white;
         width: 43.9vw;
-        height: 4.5vw;
+        height: 3vw;
+        min-height: 40px;
         padding: 0.5rem;
     }
 
@@ -212,6 +293,7 @@
     }
 
     .project__button{
+        min-height: 50px;
         width: 92.6vw;
         margin-top: 1rem;
         font-size: var(--font-size-fields);

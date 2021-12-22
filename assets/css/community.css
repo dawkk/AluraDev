@@ -96,7 +96,10 @@
     font-weight: bold;
     font-family: var(--font-family);
     color: var(--font-color);
+    font-size: 1.31rem;
+    line-height: 2rem;
 }
+
 
 .community__description {
     color: var(--font-color);

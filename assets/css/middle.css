@@ -11,7 +11,6 @@
 
 .middle__frame {
     width: 55vw;
-    height: 25vw;
     min-width: 25rem;
     min-height: 25rem;
     border-radius: 0.5rem;
@@ -36,16 +35,18 @@
 }
 
 .middle__text {
-    width: 100%;
-    height:85%;
+    display: inline-block;
+    max-width: 100%;
+    min-width: 420px;
+    min-height: 270px;
     border: none;
-    resize: none;
     background-color: var(--bg-gray-dark);
     color: var(--font-color);
     margin: 1rem 0;
     margin-bottom: 0.5rem;
     font-size: var(--font-size-fields);
     white-space: pre-wrap;
+    overflow: hidden;
 }
 
 .middle__button {

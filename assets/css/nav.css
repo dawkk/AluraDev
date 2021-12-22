@@ -59,5 +59,14 @@
 }
 
 
+.nav__mobile__searchSpace {
+    display:none;
+}
 
+.nav__mobile__menu {
+    display: none;
+}
 
+.nav__mobile-openIcon {
+    display: none;
+} 
