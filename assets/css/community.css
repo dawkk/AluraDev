@@ -44,6 +44,7 @@
 
 
 .community__background {
+    min-width: 370px;
     border-radius: 0.5rem;
     box-sizing: border-box;
     padding: 0.5rem;

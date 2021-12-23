@@ -70,3 +70,32 @@
 .nav__mobile-openIcon {
     display: none;
 } 
+
+.nav__mobile-closeSearchIcon {
+    display: none;
+    color: var(--font-color);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.nav__mobile-search:hover {
+    background-color: var(--bg-form-hover);
+    transition: 0.5s;
+}
+
+.mobile__author:hover {
+    cursor: pointer;
+    background-color: var(--bg-author-hover);
+    transition: 0.5s;
+}
+
+.nav__mobile-openIcon:hover{
+    background-color: var(--bg-form-hover);
+    transition: 0.5s;
+}
+
+.nav__mobile-closeIcon:hover, .nav__mobile-closeSearchIcon:hover{
+    background-color: var(--bg-form-hover);
+    transition: 0.5s;
+}

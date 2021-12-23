@@ -300,6 +300,21 @@
     }
 
 
+    /* Community.css*/
+    
+    .community__container {
+        display: inline-flex;
+        flex-flow: column;
+        min-width: 0;
+        margin: 0;
+
+    }
+
+    .community__frame {
+        width: 92.8vw;
+        min-width: 420px;
+
+    }
 }
 
 

@@ -21,8 +21,8 @@
 </head>
 <body>
     <header class="header__container">
-        <img class="header__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev">
-        <input class="header__search" type="text" placeholder="Busque por algo">
+        <img class="header__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev" header-logo>
+        <input class="header__search" type="text" placeholder="Busque por algo" search-bar>
         <button class="header__author">
             <img class="header__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
             <p class="header__author__name">Harry</p>
@@ -31,14 +31,14 @@
          <!-- MOBILE NAV OPEN -->
 
          <div class="nav__mobile__searchSpace">
-            <i class="fas fa-search fa-2x nav__mobile-search" btn-mobile-search>
-
+            <i class="fas fa-search fa-2x nav__mobile-search" btn-mobile-search></i>
+            <i class="fas fa-times fa-2x nav__mobile-closeSearchIcon" btn-mobile-close-search>
             </i>
+           
+           
         </div>
         <div class="nav__mobile__header" >
-            <i class="fas fa-bars fa-2x nav__mobile-openIcon" btn-mobile-open>
-
-            </i>
+            <i class="fas fa-bars fa-2x nav__mobile-openIcon" btn-mobile-open></i>
         </div>
     </header>
     <main>
@@ -282,15 +282,16 @@ let isLandscape = (windowRatio > 1) ? true : false;
                     </p>
                 </button>
                 <hr>
+                <!-- note - to change focus of current active page menu and others, you need to give the current page the a class nav__li--active and give the i class  nav__list-icon--active -->
                 <li class="nav__mobile-liPadding">
-                    <a class="nav__li nav__li--active" href="index.html">
-                        <i class="fas fa-code nav__list-icon nav__list-icon--active" alt="Acessar pagina do editor de código">
+                    <a class="nav__li" href="index.html">
+                        <i class="fas fa-code nav__list-icon" alt="Acessar pagina do editor de código">
                         </i>Editor de Código
                     </a>
                 </li>
                 <li class="nav__mobile-liPadding">
-                    <a class="nav__li" href="comunidade.html">
-                        <i class="fas fa-users nav__list-icon" alt="Acessar pagina da comunidade">
+                    <a class="nav__li nav__li--active" href="comunidade.html">
+                        <i class="fas fa-users nav__list-icon nav__list-icon--active" alt="Acessar pagina da comunidade">
 
                         </i>Comunidade
                     </a>
