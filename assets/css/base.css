@@ -7,7 +7,7 @@
     --bg-gray-dark:#141414;
 
     --bg-editor-green:rgba(154, 255, 107, 1);
-    --bg-editor-blue:rgb(12, 14, 27);
+    --bg-editor-blue:#6B83FF;
     --bg-editor-orange: rgba(255, 196, 107, 1);
     --bg-editor-pink:rgba(255, 107, 205, 1);
 
@@ -40,6 +40,7 @@
     --bg-nav-hover:rgba(80, 129, 251, 0.64);
     --bg-nav-active:rgba(80, 129, 251, 1);
 
+    --icon-liked:red;
    
 
     /* font details */

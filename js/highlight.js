@@ -14,36 +14,3 @@ function applyHighlight () {
 highlightButton.addEventListener('click', () => {
     applyHighlight();
 })
-
-
-
-/*
-
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
-
-tentando criar uma forma de desligar o highlight após ligado
-
-highlightButton.addEventListener('click', () => {
-    if(highlightOnOff) {
-        highlightOff();
-    } else {
-        highlightOn();
-    }
- })
-
- function highlightOn() {
-
-    highlightButton.innerText = 'Remover o Highlight';
-    highlightOnOff = true;
-    applyHighlight ()
- }
-
- function highlightOff() {
-
-
-    codeArea.innerHTML = `<code class="middle__text hljs ${languages.value}" contenteditable="true" aria-label="Editor de código"></code>`;
-    highlightButton.innerText = 'Visualizar com o Highlight';
-    highlightOnOff = false;
-    
- } */
