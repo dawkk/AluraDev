@@ -38,7 +38,7 @@
 
     .header__search {
         display: none;
-        width: 80vw;
+        width: 70vw;
         min-height: 50px;
         margin-left: 1%;
         font-size: var(--font-size-fields);

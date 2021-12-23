@@ -7,6 +7,7 @@
 .project__name {
     width: 17vw;
     height: 3vw;
+    min-height: 3.3rem;
     border-radius: 0.5rem;
     border: none;
     padding: 0.3rem 0.3rem 0.3rem 1rem;
@@ -21,6 +22,7 @@
 .project__description {
     width: 17vw;
     height: 5vw;
+    min-height: 5.125rem;
     border-radius: 0.5rem;
     border: none;
     padding: 1rem 0.3rem 0.3rem 1rem;
@@ -41,6 +43,7 @@
     border-radius: 0.5rem;
     width: 18.5vw;
     height: 3vw;
+    min-height: 3.3rem;
     border: none;
     padding: 0 0 0 1rem;
     margin: 0 0 1rem 0;
@@ -69,6 +72,7 @@
 
 .project__button {
     margin-top: 11%;
+    min-height: 3.62rem;
     width: 18.5vw;
     height: 3.3vw;
     border: none;

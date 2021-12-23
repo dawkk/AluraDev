@@ -77,6 +77,8 @@
     padding: 1rem;
     border-radius: 0.8rem;
     cursor: pointer;
+    max-width: 16px;
+    width: 20vw;
 }
 
 .nav__mobile-search:hover {
