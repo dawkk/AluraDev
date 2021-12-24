@@ -6,122 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="./assets/css/synth-midnight-terminal-dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/monokai.css">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/middle.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
+    <link rel="stylesheet" href="./assets/css/responsive_mobile.css">
+    <link rel="stylesheet" href="./assets/css/responsive_tablet.css">
+
 </head>
 <body>
-    <header class="navbar__header">
 
-            <img class="navbar__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev">
-            <input class="navbar__search" type="text" placeholder="Busque por algo">
-            <button class="navbar__author">
-                <img class="navbar__authorPhoto" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
-                <p class="navbar__authorName">Harry</p>
-            </button>
+    <header class="header__container">
+        <img class="header__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev" header-logo>
+        <input class="header__search" type="text" placeholder="Busque por algo" search-bar>
+        <button class="header__author">
+            <img class="header__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+            <p class="header__author__name">Harry</p>
+        </button>
+
+        <!-- MOBILE NAV OPEN -->
+
+        <div class="nav__mobile__searchSpace">
+            <i class="fas fa-search fa-2x nav__mobile-search" btn-mobile-search></i>
+            <i class="fas fa-times fa-2x nav__mobile-closeSearchIcon" btn-mobile-close-search>
+            </i>
+           
+           
+        </div>
+        <div class="nav__mobile__header" >
+            <i class="fas fa-bars fa-2x nav__mobile-openIcon" btn-mobile-open></i>
+        </div>
+
     </header>
 
     <main>
-        <div class="menu__all">
         
-            <div class="menu__left">
-                <h1 class="menu__title">Menu</h1>
-                <ul class="menu__leftList">
-                    <li><a href="#"><img class="menu__leftIcon" src="imagens/Icone_Editor.png">Editor de Código</a></li>
-                    <li><a href="#"></a><img class="menu__leftIcon" src="imagens/Icone_Comunidade.png">Comunidade</a></li>
+        <div class="main__container">
+
+        
+            <!-- NAV -->
+
+
+
+            <div class="nav__container">
+                <h1 class="title">Menu</h1>
+                <ul class="nav__list">
+                    <li><a class="nav__li nav__li--active" href="index.html"><i class="fas fa-code nav__list-icon nav__list-icon--active" alt="icone de editor de código"></i>Editor de Código</a></li>
+                    <li><a class="nav__li" href="comunidade.html"><i class="fas fa-users nav__list-icon" alt="icone de comunidade"></i>Comunidade</a></li>
                 </ul>
             </div>
 
-            
-            <!--menu main-->
-            <div>
-                <div class="menu__mainColorFrame">  
-                    <div class="menu__mainBackground">  
-                        <img class="menu__mainIcon" src="imagens/bola_vermelha.svg">    
-                        <img class="menu__mainIcon" src="imagens/bola_verde.svg">   
-                        <img class="menu__mainIcon" src="imagens/bola_amarela.svg"> 
-                        <div>   
-                            <textarea class="menu__mainText" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)    
-                                
-                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
-                                
-                            const unfold = (f, seed) => {   
-                            const go = (f, seed, acc) => {    
-                                const res = f(seed) 
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc  
-                            } 
-                            return go(f, seed, [])    
-                            }"></textarea>  
-                        </div>  
+            <!-- MIDDLE-->
+
+            <div class="middle__container">
+                <div class="middle__frame" frame-color>  
+                    <div class="middle__background">  
+                        <img class=".middle__icons" src="imagens/bola_vermelha.svg">    
+                        <img class=".middle__icons" src="imagens/bola_verde.svg">   
+                        <img class=".middle__icons" src="imagens/bola_amarela.svg">  
+                        
+                        <div class="middle__wrapper" code-text-area>
+                            <code class="middle__text hljs code" contenteditable="true" aria-label="Editor de código"> const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)                                                                                                 
+                                a
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
+                                    
+                                const unfold = (f, seed) => {   
+                                const go = (f, seed, acc) => {    
+                                    const res = f(seed) 
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc  
+                                } 
+                                return go(f, seed, [])    
+                                }
+                            
+                            </code>
+                        </div>
                     </div> 
                 </div>  
-
-                <button type="button" class="menu__mainButton">Visualizar com o Highlight</button>
+                <button type="button" id="Middle__Button-toggle" class="middle__button"  highlight-button>Visualizar com o Highlight</button>
+                        
             </div> 
 
+            <!-- PROJECT -->
 
-            <div class="menu__right">
-                <h1 class="menu__title">Seu projeto</h1>
-                <input class="menu__rightProject" type="text" name="projectName" placeholder="Nome do seu projeto">
+            <div class="project__container">
+                <h1 class="title">Seu projeto</h1>
+                <input class="project__name" type="text" name="projectName" placeholder="Nome do seu projeto">
 
-               <!--  <input class="menu__rightDescription" type="text" name="projectDescription" placeholder="Descrição do seu projeto"> -->
-
-                <textarea class="menu__rightDescription" rows="4" placeholder="Descrição do seu projeto"></textarea>
+                <textarea class="project__description" rows="4" placeholder="Descrição do seu projeto"></textarea>
                
-                <div class="menu__rightBottom">
-                    <h1 class="menu__title">Personalização</h1>
-                   
-                    <form action="#">
-                        <label for="languages">
-                        <select class="menu__rightCustomize" name="languages" id="languages">
-                        <option value="javascript" id="languages">Javascript</option>
-                        <option value="html" id="languages">HTML</option>
-                        <option value="css" id="languages">CSS</option>
+                <div class="project__padding">
+                    <h1 class="title">Personalização</h1>
+                    
+                    <div class="mobile__customize">
+                        <select class="project__select languages" name="languages" id="languages" select-languages>
+                            <option value="javascript" class="project__select__background">Javascript</option>
+                            <option value="html" class="project__select__background">HTML</option>
+                            <option value="css" class="project__select__background">CSS</option>
                         </select>
-                        </label>
 
-
-                    </form>
-
-
+                        <div class="project__color__box__border">
+                            <input class="project__color__box__fill" name="MainColorFrame"  type="color" value="#6BD1FF" selector-color>
+                        </div>
+                    <div>
+                        <button class="project__button" type="button">Salvar Projeto</button>
+                        
+                    </div>
                 </div>
-
-
             </div>
-         
-                
+        </div>
 
-        </div> 
-                
+        <!-- MENU MOBILE -->
 
+    <nav class="nav__mobile__menu" mobile-menu>
 
-
-
-<!--             
-    
-    <i class="fas fa-code menu__icon">
-        <i class="fas fa-users menu__icon"></i>
-    
-    <ul class="menu__aside">
-                <li>Menu</li>
-                <li><a class="menu__link" href=""><i class="fas fa-code menu__icon"></i><p class="menu__text">Editor de Código</p></a></li>
-                <li><a class="menu__link" href="#"><i class="fas fa-users menu__icon"></i><p class="menu__text">Comunidade</p></a></li>
-                
-            </ul>
-
- -->
-      
-               <!--  <li>M E N U</li>
-                <li><a href="#"><img class ="menu__iconEditor" src="imagens/Icone_Editor.png" alt="icone editor de código">Editor de Código</a></li>
-                <li><a href="#"><img class ="menu__iconCommunity"src="imagens/Icone_Comunidade.png" alt="icone de comunidade">Comunidade</a></li>
-                -->   
-
+        <ul class="nav__mobile__ul">
+            <i class="fas fa-times fa-2x nav__mobile-closeIcon" btn-mobile-close></i>
+            <img class="mobile__logo" src="imagens/Header/Logo.svg" alt="Logotipo AluraDev">
            
             
+            <hr>
+            <button class="mobile__author">
+                <img class="mobile__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                <p class="mobile__author__name">Harry</p>
+            </button>
+            <hr>
+            
+
+            <li class="nav__mobile-liPadding"><a class="nav__li nav__li--active" href="index.html"><i class="fas fa-code nav__list-icon nav__list-icon--active" alt="Acessar pagina do editor de código"></i>Editor de Código</a></li>
+         
+            <li class="nav__mobile-liPadding"><a class="nav__li" href="comunidade.html"><i class="fas fa-users nav__list-icon" alt="Acessar pagina da comunidade"></i>Comunidade</a></li>
+            
+        </ul>
+      </nav>
     </main>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/colorFrame.js"></script>
+    <script src="./js/highlight.js"></script>
+    <script src="./js/mobileMenu.js"></script>
 
-    <footer>
-    </footer>
 </body>
 </html>

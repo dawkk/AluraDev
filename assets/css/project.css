@@ -1,0 +1,103 @@
+
+.project__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__name {
+    width: 17vw;
+    height: 3vw;
+    min-height: 3.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.3rem 0.3rem 0.3rem 1rem;
+    margin: 0 0 4% 0;
+    background-color: var(--bg-gray-light);
+    color: var(--font-color);
+    font-size: var(--font-size-fields);
+}
+
+
+
+.project__description {
+    width: 17vw;
+    height: 5vw;
+    min-height: 5.125rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem 0.3rem 0.3rem 1rem;
+    resize: none;
+    font-family: var(--font-family);
+    background-color: var(--bg-gray-light);
+    color: var(--font-color);
+    font-size: var(--font-size-fields);
+}
+
+
+
+.project__padding {
+    padding:20% 0 0 0;
+}
+
+.project__select {
+    border-radius: 0.5rem;
+    width: 18.5vw;
+    height: 3vw;
+    min-height: 3.3rem;
+    border: none;
+    padding: 0 0 0 1rem;
+    margin: 0 0 1rem 0;
+    background-color: var(--bg-gray-light);
+    color: var(--font-color);
+    opacity: 70%;
+    font-size: var(--font-size-fields);
+}
+
+.project__select__background {
+    background-color: var(--bg-blue-dark);
+}
+
+.project__color__box__border {
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+}
+
+.project__color__box__fill {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    padding:0;
+}
+
+.project__button {
+    margin-top: 11%;
+    min-height: 3.62rem;
+    width: 18.5vw;
+    height: 3.3vw;
+    border: none;
+    border-radius: 0.5rem;
+    background-color:var(--bg-project-button);
+    color: black;
+    font-size: var(--font-size-fields);
+}
+
+
+
+
+
+.project__name:hover, .project__description:hover, .project__select:hover, .project__color__box__border:hover  {
+    background-color: var(--bg-form-hover);
+    transition: 0.5s;
+}
+
+.project__button:hover {
+    background-color: var(--bg-light-button-hover);
+    transition: 0.5s;
+}
+
+.project__button:active {
+    border: 0.5rem solid var(--light-button-border-active);
+    border-radius: 0.5rem;
+}
+

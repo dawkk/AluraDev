@@ -1,0 +1,77 @@
+
+
+.middle__container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+.middle__frame {
+    width: 55vw;
+    min-width: 25rem;
+    min-height: 25rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: var(--bg-blue-light);
+}
+
+
+.middle__background {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: var(--bg-gray-dark);
+}
+
+.middle__icons {
+    padding: 0 0.5rem 1rem 0;
+    background-color: var(--bg-gray-dark);
+}
+
+.middle__text {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 420px;
+    min-height: 270px;
+    border: none;
+    background-color: var(--bg-gray-dark);
+    color: var(--font-color);
+    margin: 1rem 0;
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-fields);
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.middle__button {
+    margin-top: 3%;
+    width: 55vw;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--bg-middle-button);
+    color: var(--font-color);
+    font-size: var(--font-size-fields);
+}
+
+.middle__button:hover {
+    background-color: var(--bg-dark-button-hover);
+    transition: 0.5s;
+}
+
+.middle__button:active {
+    border: 0.5rem solid var(--dark-button-border-active);
+
+}
+.middle__wrapper {
+    height: 100%;
+
+    margin-bottom: 32px;
+}
+

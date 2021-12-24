@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+
+    <link rel="stylesheet" href="./assets/css/monokai.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/community.css">
+    <link rel="stylesheet" href="./assets/css/responsive_mobile.css">
+    <link rel="stylesheet" href="./assets/css/responsive_tablet.css">
+
+</head>
+<body>
+    <header class="header__container">
+        <img class="header__logo" src="imagens/Logo-Alura.png" alt="Logotipo AluraDev" header-logo>
+        <input class="header__search" type="text" placeholder="Busque por algo" search-bar>
+        <button class="header__author">
+            <img class="header__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+            <p class="header__author__name">Harry</p>
+        </button>
+
+         <!-- MOBILE NAV OPEN -->
+
+         <div class="nav__mobile__searchSpace">
+            <i class="fas fa-search fa-2x nav__mobile-search" btn-mobile-search></i>
+            <i class="fas fa-times fa-2x nav__mobile-closeSearchIcon" btn-mobile-close-search>
+            </i>
+           
+           
+        </div>
+        <div class="nav__mobile__header" >
+            <i class="fas fa-bars fa-2x nav__mobile-openIcon" btn-mobile-open></i>
+        </div>
+    </header>
+    <main>
+        <div class="main__container">
+
+            <!-- NAV -->
+
+            <div class="nav__container">
+                <h1 class="title">Menu</h1>
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__li" href="index.html">
+                            <i class="fas fa-code nav__list-icon" alt="icone de editor de código">
+                            </i>Editor de Código
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__li nav__li--active" href="comunidade.html">
+                            <i class="fas fa-users nav__list-icon nav__list-icon--active" alt="icone de comunidade">
+                            </i>Comunidade
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- CONTAINER LEFT-->
+
+            <div class="community__container">
+
+                <!-- BLACKBOARD UP LEFT-->
+
+                <div class="community__frame editor__color__upLeft">  
+                    <div class="community__background">  
+                        <img class=".community__icons" src="imagens/bola_vermelha.svg">    
+                        <img class=".community__icons" src="imagens/bola_verde.svg">   
+                        <img class=".community__icons" src="imagens/bola_amarela.svg">
+                        <div class="community__editorCode">     
+                            <pre><code class="community__text hljs javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}</code></pre>
+                        </div> 
+                    </div> 
+                </div>
+
+                <!-- PROJECT DETAILS UP LEFT-->
+
+                <div class="community__details">
+                    <h1 class="community__title">Título do projeto
+                    </h1>
+                    <p class="community__description">Essa é a descrição do meu projeto.
+                    </p>
+
+                    <div class="community__interaction">
+                        <button type="button" class="community__interaction-styling">
+                            <i class="fas fa-comment community__icon"></i>
+                            <p class="community__number comment-number" >12
+
+                            </p>
+                        </button>
+
+                        <button class="community__interaction-styling like">
+                            <i class="fas fa-heart community__icon"></i>
+                            <p class="community__number">20</p>
+                        </button>
+
+                        <button class="community__author"> 
+                            <img class="community__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                            <p class="community__author__name">@Harry</p>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- BLACKBOARD DOWN LEFT-->
+
+                <div class="community__frame editor__color__downLeft">  
+                    <div class="community__background">  
+                        <img class=".community__icons" src="imagens/bola_vermelha.svg">    
+                        <img class=".community__icons" src="imagens/bola_verde.svg">   
+                        <img class=".community__icons" src="imagens/bola_amarela.svg">    
+                            <div class="community__editorCode"><pre><code class="community__text hljs javascript">
+let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
+                                
+// LANDSCAPE / PORTRAIT
+
+let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+let windowRatio = window.innerWidth / window.innerHeight;
+let isLandscape = (windowRatio > 1) ? true : false;
+                            </code></pre> 
+                    </div> 
+                </div>     
+            </div>
+
+                <!-- PROJECT DETAILS DOWN LEFT-->
+
+                <div class="community__details">
+                    <h1 class="community__title">Título do projeto<h1>
+                    <p class="community__description">Essa é a descrição do meu projeto.</p>
+
+                    <div class="community__interaction">
+                        <button type="button"class="community__interaction-styling">
+                            <i class="fas fa-comment community__icon" comment-icon></i><p class="community__number comment-number" comment-number>1</p>
+                        </button>
+
+                        <button class="community__interaction-styling like">
+                            <i class="fas fa-heart community__icon"></i><p class="community__number">3</p>
+                        </button>
+                        <button class="community__author"> 
+                            <img class="community__author__photo"src="imagens/Foto_Usuario_2x.png"alt="Foto usuario">
+                            <p class="community__author__name">@Harry<p>
+                        </button>
+                    </div>
+                </div> 
+            </div>  
+        
+
+            <!-- CONTAINER RIGHT-->
+   
+            <div class="community__container">
+
+                <!-- BLACK BOARD UP RIGHT-->
+
+                <div class="community__frame editor__color__upRight">  
+                    <div class="community__background">  
+                        <img class=".community__icons" src="imagens/bola_vermelha.svg">    
+                        <img class=".community__icons" src="imagens/bola_verde.svg">   
+                        <img class=".community__icons" src="imagens/bola_amarela.svg">    
+                        <div class="community__editorCode">     
+                            <pre><code class="community__text hljs javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                            const unfold = (f, seed) => {
+                            const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                            }
+                            return go(f, seed, [])
+                            }</code></pre>
+                        </div>  
+                    </div> 
+                </div>
+                 
+                <!-- PROJECT DETAILS UP RIGHT-->
+
+                <div class="community__details">
+                    <h1 class="community__title">Título do projeto</h1>
+                    <p class="community__description">Essa é a descrição do meu projeto.</p>
+
+                    <div class="community__interaction">
+                        <button type="button" class="community__interaction-styling">
+                            <i class="fas fa-comment community__icon" comment-icon></i>
+                            <p class="community__number comment-number" comment-number>7</p>
+                        </button>
+    
+                        <button class="community__interaction-styling like">
+                            <i class="fas fa-heart community__icon"></i>
+                            <p class="community__number">5</p>
+                        </button>
+                            
+                        <button class="community__author"> 
+                            <img class="community__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                            <p class="community__author__name">@Harry</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BLACK BOARD DOWN RIGHT-->
+                
+                <div class="community__frame editor__color__downRight">  
+                        <div class="community__background">  
+                            <img class=".community__icons" src="imagens/bola_vermelha.svg">    
+                            <img class=".community__icons" src="imagens/bola_verde.svg">   
+                            <img class=".community__icons" src="imagens/bola_amarela.svg">    
+                            <div class="community__editorCode">     
+                                <pre><code class="community__text hljs html">&lt;!-- page heading --&gt;
+&lt;div class='container container-dark p-y-md'&gt;
+    &lt;div class='header-content'&gt;
+    &lt;h1&gt;Material Search Animation&lt;/h1&gt;
+    &lt;h2&gt;Usign CSS Transitions&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- page content + floating button --&gt;
+&lt;div class='container p-y-md'&gt;
+    &lt;div class='control'&gt;
+        &lt;div class='btn-material'&gt;&lt;/div&gt;
+                                    </code></pre>
+                            </div>  
+                        </div> 
+                </div>
+
+                <!-- PROJECT DETAILS DOWN LEFT-->
+
+                <div class="community__details">
+                        <h1 class="community__title">Título do projeto</h1>
+                        <p class="community__description">Essa é a descrição do meu projeto.</p>
+    
+                        <div class="community__interaction">
+                            <button type="button" class="community__interaction-styling">
+                                <i class="fas fa-comment community__icon"></i>
+                                <p class="community__number comment-number">10</p>
+                            </button>
+    
+                            <button class="community__interaction-styling like">
+                                <i class="fas fa-heart community__icon"></i>
+                                <p class="community__number">8</p>
+                            </button>
+                            
+                            <button class="community__author"> 
+                                <img class="community__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                                <p class="community__author__name">@Harry</p>
+                            </button>
+                        </div>
+                </div> 
+
+            </div>     
+        </div>
+        
+        <!-- MENU MOBILE -->
+        
+        <nav class="nav__mobile__menu" mobile-menu>
+            <ul class="nav__mobile__ul">
+                <i class="fas fa-times fa-2x nav__mobile-closeIcon" btn-mobile-close>
+                </i>
+                <img class="mobile__logo" src="imagens/Header/Logo.svg" alt="Logotipo AluraDev">
+                <hr>
+                <button class="mobile__author">
+                    <img class="mobile__author__photo" src="imagens/Foto_Usuario_2x.png" alt="Foto usuario">
+                    <p class="mobile__author__name">Harry
+                    </p>
+                </button>
+                <hr>
+                <!-- note - to change focus of current active page menu and others, you need to give the current page the a class nav__li--active and give the i class  nav__list-icon--active -->
+                <li class="nav__mobile-liPadding">
+                    <a class="nav__li" href="index.html">
+                        <i class="fas fa-code nav__list-icon" alt="Acessar pagina do editor de código">
+                        </i>Editor de Código
+                    </a>
+                </li>
+                <li class="nav__mobile-liPadding">
+                    <a class="nav__li nav__li--active" href="comunidade.html">
+                        <i class="fas fa-users nav__list-icon nav__list-icon--active" alt="Acessar pagina da comunidade">
+
+                        </i>Comunidade
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./js/mobileMenu.js"></script>
+    <script src="./js/likeSystem.js"></script>
+
+    <script>hljs.highlightAll()</script>
+
+
+    
+</body>
+</html>
