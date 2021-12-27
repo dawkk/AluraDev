@@ -72,7 +72,7 @@
                         <img class=".middle__icons" src="imagens/bola_amarela.svg">  
                         
                         <div class="middle__wrapper" code-text-area>
-                            <code class="middle__text hljs code" contenteditable="true" aria-label="Editor de código"> const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)                                                                                                 
+                            <code class="middle__text hljs code" contenteditable="true" aria-label="Editor de código" code-editor> const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)                                                                                                 
                                 a
                                 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)    
                                     
@@ -96,9 +96,9 @@
 
             <div class="project__container">
                 <h1 class="title">Seu projeto</h1>
-                <input class="project__name" type="text" name="projectName" placeholder="Nome do seu projeto">
+                <input class="project__name" type="text" name="projectName" placeholder="Nome do seu projeto" project-name>
 
-                <textarea class="project__description" rows="4" placeholder="Descrição do seu projeto"></textarea>
+                <textarea class="project__description" rows="4" placeholder="Descrição do seu projeto" project-description></textarea>
                
                 <div class="project__padding">
                     <h1 class="title">Personalização</h1>
@@ -114,7 +114,7 @@
                             <input class="project__color__box__fill" name="MainColorFrame"  type="color" value="#6BD1FF" selector-color>
                         </div>
                     <div>
-                        <button class="project__button" type="button">Salvar Projeto</button>
+                        <button class="project__button" type="button" button-save>Salvar Projeto</button>
                         
                     </div>
                 </div>
@@ -151,6 +151,7 @@
     <script src="./js/colorFrame.js"></script>
     <script src="./js/highlight.js"></script>
     <script src="./js/mobileMenu.js"></script>
+    <script src="./js/database.js"></script>
 
 </body>
 </html>
