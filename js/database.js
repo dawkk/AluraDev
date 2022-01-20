@@ -1,9 +1,11 @@
 
 let bd; // objeto para manipular o BD
 let reqBD = indexedDB.open('aluraDev', 2); 
+
 reqBD.onsuccess = () => {
     bd = reqBD.result;
 }
+
 reqBD.onerror = () => {
     console.log(reqBD.error);
 };
