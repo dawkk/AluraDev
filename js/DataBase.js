@@ -1,15 +1,15 @@
 
 
-const STORES = ['projetos'];
-const VERSION = 1;
-const DBNAME = 'aluradev';
+const DB_STORE_NAME = ['projetos'];
+const DB_VERSION = 1;
+const DB_NAME = 'Aluradev';
 
 const btnSave = document.querySelector('[button-save]');
 
 const IDB = (function init() {
     let db = null;
     let objectStore = null;
-    let DBOpenReq = indexedDB.open('AluraDev', 1);
+    let DBOpenReq = indexedDB.open('DB_NAME', 2);
   
     DBOpenReq.addEventListener('error', (err) => {
       //Error occurred while trying to open DB
@@ -32,28 +32,24 @@ const IDB = (function init() {
   
       console.log('upgrade', db);
       if (!db.objectStoreNames.contains('projectStore')) {
-        objectStore = db.createObjectStore('projectStore', {
-          keyPath: 'projectID',
-        });
-      }
+        objectStore = db.createObjectStore('projectStore', {autoIncrement:true, keyPath: 'projectID'});
+      };
     });
   
-    btnSave.addEventListener('submit', (ev) => {
-      ev.preventDefault();
-      //one of the form buttons was clicked
-
-      let projectName = document.querySelector('[project-name]').value;
-      let projectDescription = document.querySelector('[project-description]').value;
-      let projectColor = document.querySelector('[selector-color]').value;
-      let projectLanguage = document.querySelector('[select-languages]').value;
-      let codeEditor = document.querySelector('[code-editor]').value;
+    btnSave.onclick = () => {
+      let projectName = document.querySelector('[project-name]');
+      let projectDescription = document.querySelector('[project-description]');
+      let projectColor = document.querySelector('[selector-color]');
+      let projectLanguage = document.querySelector('[select-languages]');
+      let codeEditor = document.querySelector('[code-editor]');
 
       let project = {
-          projectID:projectName,
-          projectDescription,
-          projectColor,
-          projectLanguage,
-          codeEditor,
+          projectID:projectName.value,
+          description:projectDescription.value,
+          color:projectColor.value,
+          language:projectLanguage.value,
+          code:codeEditor.value
+
       };
 
       let transactionBD = makeTS('projectStore', 'readwrite');transactionBD.oncomplete = (ev) => {
@@ -70,6 +66,48 @@ const IDB = (function init() {
 
       request.onerror = (ev) => {
           console.log('error in request to add :/');
+      };
+    };
+
+    // not sure if applicable 
+    // function buildList() {
+    //   let transactionBD = makeTS('projectStore', 'readwrite');
+    //   transactionBD.oncomplete = (ev) => {
+    //     //transaction for reading all objects is complete
+    //   };
+    //   let store = transactionBD.objectStore('projectStore');
+    //   let getReq = store.getAll();
+    //   //returns an array
+    //   //option can pass in a key or a keyRange
+    //   getReq.onsucess = (ev) => {
+    //     //getAll was successful
+    //     let request = ev.target; //request === getReq === ev.target
+    //     console.log({request});
+    //   }
+
+    document.querySelector('[project-description]').addEventListener('click', (ev) => {
+      let getData = ev.target.closest('[data-key]');
+      let id = getData.getAtrribute('data-key');
+      console.log(getData, id);
+
+      let transactionBD = makeTS('projectStore', 'readwrite');
+      transactionBD.oncomplete = (ev) => {
+        //get transaction complete
+      };
+      
+      let store = transactionBD.objectStore('projectStore');
+      let reqData = store.get(id);
+      reqData.onsucess = (ev) => {
+        let request = ev.target;
+        let project = request.result;
+        document.querySelector('[project-description]').value = project.description;
+        document.querySelector('[selector-color]').value = project.color;
+        document.querySelector('[select-languages]').value = project.language;
+        document.querySelector('[code-editor]').value = project.code;
+        document.querySelector('[project-name]').setAttribute('data-key', project.id);
+      };
+      reqData.onerror = (err) => {
+        console.warn(err);
       };
     });
 
