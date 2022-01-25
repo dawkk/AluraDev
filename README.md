@@ -8,6 +8,7 @@ Este projeto foi proposto pela Alura durante o [Desafio Alura Front-End](#Sobre-
 [Como utilizar](#Como-utilizar)
  - [Screenshot](#Screenshot)
   - [Como executar o projeto localmente](#Como-executar-o-projeto-localmente)
+  
 [Tecnologias Utilizadas](#Tecnologias-utilizadas)
 [Sobre o Desafio Alura Front-End](#Sobre-o-desafio-alura-front-end)
 [O que aprendi neste desafio](#O-que-aprendi-neste-desafio)
