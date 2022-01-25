@@ -1,9 +1,9 @@
-#Editor de Código - Alura Dev
+# Editor de Código - Alura Dev
 
 Este é um editor de código, elaborado para que você compartilhe seus códigos em redes sociais ou onde quiser como imagem com um layout diferente e bonito.
 Este projeto foi proposto pela Alura durante o [Desafio Alura Front-End](#Sobre-o-desafio-alura-front-end).
 
-##Índice:
+## Índice:
 
 [Como utilizar](#Como-utilizar)
  - [Screenshot](#Screenshot)
@@ -13,7 +13,7 @@ Este projeto foi proposto pela Alura durante o [Desafio Alura Front-End](#Sobre-
 [O que aprendi neste desafio](#O-que-aprendi-neste-desafio)
 [Próximas implementações](#Próximas-implementações)
 
-##Como utilizar:
+## Como utilizar:
 
 * Clique no link descrito, digite ou cole seu código dentro do quadro central. (Linguagens disponíveis: HTML,CSS e Javascript)
 
@@ -25,18 +25,18 @@ Este projeto foi proposto pela Alura durante o [Desafio Alura Front-End](#Sobre-
 
 * Para finalizar, clique em "Salvar Projeto" para que este projeto seja salvo. Seus projetos poderão ser vistos na pagina "Comunidade". Você pode acessa-la clicando no menu de navegação no canto superior esquerdo da tela.
 
-###Screenshot
+### Screenshot
 
 ![Imagem do Projeto](../imagens/Projeto_Final.png)
 
-##Como executar o projeto localmente:
+## Como executar o projeto localmente:
 
 1. Clone o repositório através de [download ZIP](https://github.com/dawkk/AluraChallengeFE) ou por linha de comando `git clone https://github.com/dawkk/AluraChallengeFE.git`.
 
 2. Execute o index.html no seu navegador, arrastando do o até o navegador, ou abrindo arquivo selecionando um programa na lista (navegador).
 
 
-##Tecnologias Utilizadas:
+## Tecnologias Utilizadas:
 
 * HTML5
 
@@ -48,7 +48,7 @@ Este projeto foi proposto pela Alura durante o [Desafio Alura Front-End](#Sobre-
 
 * Local Storage
 
-##Sobre o Desafio Alura Front-End:
+## Sobre o Desafio Alura Front-End:
 
 É dada uma situação problema, prazos e ferramentas para que solucionemos o problema.
 
@@ -58,7 +58,7 @@ Ferramentas - É dado um layout através da ferramenta Figma para que usemos com
 
 Desenvolvimento - Não é informado em si como fazer cada etapa, contamos com nosso conhecimento e uma lista de apoio com cursos recomendados da Alura que são relacionados aos tópicos. Comunidade: contamos também com um discord da Alura aonde podemos tirar as duvidas entre todos os que estão no desafio e também ver os projetos de outros participantes.
 
-##O que aprendi neste desafio:
+## O que aprendi neste desafio:
 
 Este foi o primeiro grande projeto que tive a oportunidade de participar, sou muito grato pelo formato do desafio que me engajou a aplicar os conceitos. Aprendi mais sobre:
 
@@ -70,7 +70,7 @@ Este foi o primeiro grande projeto que tive a oportunidade de participar, sou mu
 - Manipulação DOM (Javascript)
 - Alterar CSS com Javascript.
 
-##Próximas implementações:
+## Próximas implementações:
 - [ ] Barra de pesquisa funcional
 - [ ] Redirecionar do projeto clicado em comunidade.html para index.html com os dados salvos preenchidos
 - [ ] Manipular os dados utilizando indexedDB
