@@ -27,7 +27,7 @@ Este projeto foi proposto pela Alura durante o [Desafio Alura Front-End](#Sobre-
 
 ### Screenshot
 
-![Imagem do Projeto](../imagens/Projeto_Final.png)
+![Imagem do Projeto](./imagens/Projeto_Final.png)
 
 ## Como executar o projeto localmente:
 
