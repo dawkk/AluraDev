@@ -70,20 +70,20 @@ const IDB = (function init() {
     };
 
     // not sure if applicable 
-    // function buildList() {
-    //   let transactionBD = makeTS('projectStore', 'readwrite');
-    //   transactionBD.oncomplete = (ev) => {
-    //     //transaction for reading all objects is complete
-    //   };
-    //   let store = transactionBD.objectStore('projectStore');
-    //   let getReq = store.getAll();
-    //   //returns an array
-    //   //option can pass in a key or a keyRange
-    //   getReq.onsucess = (ev) => {
-    //     //getAll was successful
-    //     let request = ev.target; //request === getReq === ev.target
-    //     console.log({request});
-    //   }
+     function buildList() {   let transactionBD = makeTS('projectStore', 'readwrite');
+       transactionBD.oncomplete = (ev) => {
+         //transaction for reading all objects is complete
+       };
+    let store = transactionBD.objectStore('projectStore');
+      let getReq = store.getAll();
+     //returns an array
+     //option can pass in a key or a keyRange
+      getReq.onsucess = (ev) => {
+        //getAll was successful
+        let request = ev.target; 
+        //request === getReq === ev.target
+        console.log({request});
+      }
 
     document.querySelector('[project-description]').addEventListener('click', (ev) => {
       let getData = ev.target.closest('[data-key]');
@@ -119,4 +119,4 @@ const IDB = (function init() {
         return transactionBD;
     };
 
-  })();
+  }})();

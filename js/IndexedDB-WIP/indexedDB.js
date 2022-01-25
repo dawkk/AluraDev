@@ -53,33 +53,48 @@ onload = () => {
 };
 
 
-const fncSearch = document.querySelector('[search-bar]');
+const items = await bd.transaction('projetos').objectStore.getAllKeys();
 
-// fncSearch.onclick = () => {
+
+let projectList = [];
+bd.transaction('projects')
+  .objectStore('projects')
+  .openCursor()
+  .onsucess = function (ev) {
+    let cursor = evento.target.result;
+    if (cursor) {
+      projectList.push(cursor.value);
+      cursor.continue();
+    } else {
+      console.log(projectList);
+    }
+  }
+
+
+
+// const fncSearch = document.querySelector('[search-bar]');
+// // fncSearch.onclick = () => {
+// //         bd.transaction('[projects]', 'readwrite')
+// //           .objectStore('projects')
+// //           .get(projectName.value)
+// //           .onsuccess = (e) => {
+// //             title.value = e.target.result.title;
+// //             description.value = e.target.result.description;
+// //             color.value = e.target.result.color;
+// //             language.value = e.target.result.language;
+// //           };
+// //     };
+//     fncSearch.addEventListener("keyup", function (searchEnter) {
 //         bd.transaction('[projects]', 'readwrite')
-//           .objectStore('projects')
-//           .get(projectName.value)
-//           .onsuccess = (e) => {
-//             title.value = e.target.result.title;
-//             description.value = e.target.result.description;
-//             color.value = e.target.result.color;
-//             language.value = e.target.result.language;
-//           };
-//     };
-
-    fncSearch.addEventListener("keyup", function (searchEnter) {
-        bd.transaction('[projects]', 'readwrite')
-            .objectStore('projects')
-
-        if (searchEnter.keyCode === 13) {
-            
-            bd.get(projectName.value)
-                title.value = e.target.result.title;
-                description.value = e.target.result.description;
-                color.value = e.target.result.color;
-                language.value = e.target.result.language;
-        };
-    });
+//             .objectStore('projects')
+//         if (searchEnter.keyCode === 13) {    
+//             bd.get(projectName.value)
+//                 title.value = e.target.result.title;
+//                 description.value = e.target.result.description;
+//                 color.value = e.target.result.color;
+//                 language.value = e.target.result.language;
+//         };
+//     });
 
 
 
