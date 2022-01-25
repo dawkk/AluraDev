@@ -27,6 +27,8 @@ btnSave.addEventListener('click', () => {
     }
 })
 
+
+
 function montaProjeto() {
     let projeto = {
         'id': atribuiId(),

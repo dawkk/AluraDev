@@ -4,6 +4,8 @@ new function () {
     mostraProjetos()
 }
 
+//  verifica se o localStorage tem algum projeto para pegar, se o lenght for igual a zero a funcao não precisa continuar */
+
 function mostraProjetos() {
     if(localStorage.length <= 0) {
         return
